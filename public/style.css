@@ -1,0 +1,72 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; color: #1B1B1B; background: #FFF8EC; }
+a { color: inherit; text-decoration: none; }
+[hidden] { display: none !important; }
+
+.nav { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between; padding: 18px 56px; background: #FFF8EC; border-bottom: 1px solid #F0E2C8; }
+.logo { font-size: 22px; font-weight: 800; }
+.nav nav { display: flex; flex-wrap: wrap; gap: 8px 26px; }
+.nav nav a:hover { color: #C2410C; }
+
+.btn { display: inline-block; padding: 14px 28px; font-size: 16px; font-weight: 700; border: 0; border-radius: 10px; cursor: pointer; }
+.dark { background: #1B1B1B; color: #FFF8EC; }
+.orange { background: #FF7A1A; color: #1B1B1B; }
+.outline { border: 2px solid #1B1B1B; }
+
+.hero { text-align: center; padding: 80px 56px 64px; }
+.pill { display: inline-block; padding: 8px 18px; background: #1B1B1B; color: #FFF8EC; border-radius: 999px; font-size: 14px; }
+.hero h1 { font-size: 70px; line-height: 1.05; margin: 24px auto; max-width: 900px; }
+.hero em { font-style: normal; background: #FF7A1A; padding: 0 12px; }
+.lead { font-size: 20px; color: #555; max-width: 600px; margin: 0 auto 28px; }
+.actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+
+.section { padding: 64px 56px; }
+.section h2 { margin: 0 0 28px; font-size: 36px; }
+.mut { color: #C9C2B4; }
+
+.cats { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; align-items: start; }
+.cat { background: #fff; border-radius: 20px; padding: 28px; border-top: 8px solid #FF7A1A; }
+.cat h3 { margin: 0 0 14px; font-size: 24px; }
+.svc { padding: 12px 0; border-top: 1px solid #EEE; }
+.svc b { display: block; font-size: 17px; }
+.svc span { color: #666; font-size: 14px; line-height: 1.5; }
+
+.about-sec { background: #fff; }
+.about-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 48px; align-items: start; }
+.about-text p { font-size: 18px; line-height: 1.7; color: #444; margin: 0 0 18px; }
+.about-text .big { font-size: 26px; line-height: 1.35; color: #1B1B1B; font-weight: 700; }
+.values { display: grid; gap: 14px; margin-top: 26px; }
+.values div { padding: 16px 20px; background: #FFF8EC; border-radius: 14px; border-left: 6px solid #FF7A1A; }
+.values b { display: block; margin-bottom: 4px; }
+.values span { color: #555; font-size: 15px; }
+
+.facts { background: #1B1B1B; color: #FFF8EC; border-radius: 24px; padding: 28px; }
+.photo-box { position: relative; height: 260px; border-radius: 16px; background: #FF7A1A; overflow: hidden; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #1B1B1B; }
+.photo-box img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.facts dl { margin: 22px 0 0; }
+.facts dt { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #FF9F5A; margin-top: 16px; }
+.facts dd { margin: 4px 0 0; font-size: 17px; }
+
+.project { display: flex; flex-wrap: wrap; gap: 28px; justify-content: space-between; align-items: center; padding: 44px; background: #FF7A1A; border-radius: 24px; }
+.project .label { margin: 0; font-weight: 800; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
+.project h3 { margin: 6px 0 10px; font-size: 38px; }
+.project p { margin: 0; max-width: 620px; line-height: 1.6; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.item img, .item video { width: 100%; height: 220px; object-fit: cover; border-radius: 14px; background: #FFE3C4; }
+.item p { margin: 8px 0 0; color: #555; }
+
+.contact { background: #1B1B1B; color: #FFF8EC; }
+.form { display: flex; flex-direction: column; gap: 14px; max-width: 520px; margin-top: 20px; }
+.form label { font-weight: 600; }
+.form input, .form textarea { padding: 12px; font-size: 16px; border: 0; border-radius: 8px; }
+
+footer { padding: 20px 56px; background: #0F0F0F; color: #C9C2B4; font-size: 14px; }
+
+@media (max-width: 800px) {
+  .nav, .hero, .section, footer { padding-left: 20px; padding-right: 20px; }
+  .hero h1 { font-size: 40px; }
+  .about-grid { grid-template-columns: 1fr; }
+  .project { padding: 28px; }
+}
